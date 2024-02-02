@@ -1,1 +1,2 @@
-console.log(1)
+    const list = document.querySelector('ul#categories');
+    const elementsOfCategory = list.querySelectorAll('li.item');
