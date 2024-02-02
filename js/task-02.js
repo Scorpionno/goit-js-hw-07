@@ -7,15 +7,9 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsRegister = document.getElementById('ingredients');
-
-function addIngredientToRegister(ingredientName) {
-  const registerOfItems = document.createElement('li');
-  registerOfItems.classList.add('item');
-  registerOfItems.textContent = ingredientName;
-  ingredientsRegister.appendChild(registerOfItems);
-}
-
-ingredients.forEach(ingredient => {
-  addIngredientToRegister(ingredient);
+ingredients.forEach((ingredient) => {
+  const listItem = document.createElement("li");
+  listItem.textContent = ingredient;
+  listItem.classList.add("item");
+  ingredientsList.appendChild(listItem);
 });
